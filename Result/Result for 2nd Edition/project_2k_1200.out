@@ -1,0 +1,21 @@
+SLURM_JOBID=6082410
+SLURM_JOB_NODELIST=cpn-k10-14-[01-02],cpn-k10-15-[01-02],cpn-k10-16-[01-02],cpn-k10-17-[01-02],cpn-k10-19-[01-02],cpn-k10-23-01,cpn-k10-24-01,cpn-k10-25-[01-02],cpn-k10-26-[01-02],cpn-k10-27-[01-02],cpn-k10-28-[01-02],cpn-k10-29-[01-02],cpn-k10-30-[01-02],cpn-k10-34-[01-02],cpn-k10-35-01,cpn-k10-36-[01-02],cpn-k10-37-[01-02],cpn-k10-38-[01-02],cpn-k10-39-[01-02],cpn-k10-40-[01-02],cpn-k10-41-[01-02],cpn-k11-23-[01-02],cpn-k11-24-[01-02],cpn-k11-25-[01-02],cpn-k11-26-[01-02],cpn-k11-27-[01-02],cpn-k11-28-[01-02],cpn-k11-29-[01-02],cpn-k11-30-[01-02],cpn-k11-34-[01-02],cpn-k11-35-[01-02],cpn-k11-36-[01-02],cpn-k11-37-[01-02],cpn-k11-40-[01-02],cpn-k11-41-[01-02],cpn-k13-01-[01-02],cpn-k13-02-[01-02],cpn-k13-03-[01-02],cpn-k13-04-[01-02],cpn-k13-05-[01-02],cpn-k13-06-[01-02],cpn-k13-07-[01-02],cpn-k13-08-[01-02],cpn-k13-12-[01-02],cpn-k13-13-[01-02],cpn-k13-14-[01-02],cpn-k13-15-[01-02],cpn-k13-16-[01-02],cpn-k13-17-[01-02],cpn-k13-18-[01-02],cpn-k13-19-[01-02],cpn-k13-23-01
+SLURM_NNODES=100
+SLURMTMPDIR=/scratch/6082410
+working directory = /user/fchen29/homework/project
+Number of Processors = 1200
+-----------------------------
+MAE 609 Final Project Running Result
+TOTAL CORE NUMBER -> 1200
+
+CPU AVAILABLE -> 1200
+CPU USED -> 1200
+WORKLOAD PER CORE -> 3334 lines
+ITERATION LOOPS ->9164 times
+FINAL TOLERANCE -> 9.25548e-10
+TOTAL TIME USED -> 61.3212
+LOOP TIME USED -> 61.3208
+SEND AND RECEIVE TIME USED -> 0.135374
+REDUCE ALL TIME USED-> 59.0683
+COMMUNICATION TIME USED -> 59.2037
+All Done!

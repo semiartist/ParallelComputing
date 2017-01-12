@@ -1,0 +1,19 @@
+SLURM_JOBID=6079602
+SLURM_JOB_NODELIST=cpn-k14-08-[01-02],cpn-k14-12-[01-02],cpn-k14-13-[01-02],cpn-k14-14-[01-02],cpn-k14-15-[01-02],cpn-k14-16-01,cpn-k14-17-02,cpn-k14-18-[01-02],cpn-k14-19-[01-02],cpn-k14-23-[01-02],cpn-k14-24-[01-02],cpn-k14-25-[01-02],cpn-k14-26-[01-02],cpn-k14-27-[01-02],cpn-k14-28-[01-02],cpn-k14-29-[01-02],cpn-k14-30-[01-02],cpn-k14-34-[01-02],cpn-k14-35-[01-02],cpn-k14-36-02,cpn-k14-37-[01-02],cpn-k14-38-01
+SLURM_NNODES=40
+SLURMTMPDIR=/scratch/6079602
+working directory = /user/fchen29/homework/project
+Number of Processors = 480
+-----------------------------
+MAE 609 Final Project Running Result
+TOTAL CORE NUMBER -> 480
+
+WORKLOAD PER CORE -> 2084 lines
+ITERATION LOOPS ->7532 times
+FINAL TOLERANCE -> 7.72605e-10
+TOTAL TIME USED -> 369.006
+LOOP TIME USED -> 368.664
+GATHERV TIME USED -> 247.476
+REDUCE ALL TIME USED-> 119.073
+COMMUNICATION TIME USED -> 366.549
+All Done!

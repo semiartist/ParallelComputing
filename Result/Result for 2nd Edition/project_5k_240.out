@@ -1,0 +1,21 @@
+SLURM_JOBID=6082417
+SLURM_JOB_NODELIST=cpn-k08-02-02,cpn-k08-03-01,cpn-k08-04-[01-02],cpn-k08-05-[01-02],cpn-k08-06-01,cpn-k08-07-02,cpn-k08-08-02,cpn-k08-12-01,cpn-k08-14-[01-02],cpn-k08-15-[01-02],cpn-k08-16-[01-02],cpn-k08-17-02,cpn-k08-18-[01-02],cpn-k08-19-01
+SLURM_NNODES=20
+SLURMTMPDIR=/scratch/6082417
+working directory = /user/fchen29/homework/project
+Number of Processors = 240
+-----------------------------
+MAE 609 Final Project Running Result
+TOTAL CORE NUMBER -> 240
+
+CPU AVAILABLE -> 240
+CPU USED -> 240
+WORKLOAD PER CORE -> 104167 lines
+ITERATION LOOPS ->11278 times
+FINAL TOLERANCE -> 9.99867e-10
+TOTAL TIME USED -> 969.878
+LOOP TIME USED -> 969.634
+SEND AND RECEIVE TIME USED -> 1.61604
+REDUCE ALL TIME USED-> 877.457
+COMMUNICATION TIME USED -> 879.073
+All Done!

@@ -1,0 +1,39 @@
+#!/bin/sh
+#SBATCH --partition=general-compute
+#SBATCH --time=02:00:00
+#SBATCH --nodes=5
+#SBATCH --ntasks-per-node=12
+#SBATCH --constraint=IB&CPU-E5645
+#SBATCH --mem=47000
+#SBATCH --job-name="project_500_240core"
+#SBATCH --output=project_5k_60.out
+##SBATCH --error = errorCol.out
+##SBATCH --mail-user= fchen29@buffalo.edu
+##SBATCH --mail-type=ALL
+##SBATCH --requeue
+#Specifies that the job will be requeued after a node failure.
+#The default is that the job will not be requeued.
+
+#export | grep SLURM
+echo "SLURM_JOBID="$SLURM_JOBID
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
+echo "SLURM_NNODES"=$SLURM_NNODES
+echo "SLURMTMPDIR="$SLURMTMPDIR
+echo "working directory = "$SLURM_SUBMIT_DIR
+
+NPROCS=`srun --nodes=${SLURM_NNODES} bash -c 'hostname' |wc -l`
+echo "Number of Processors = "$NPROCS
+
+module load openmpi/gcc-4.8.3/1.8.4
+ulimit -s unlimited
+
+echo "-----------------------------"
+export I_MPI_DEBUG=4
+echo "MAE 609 Final Project Running Result"
+export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
+/var/lib/pcp/pmdas/perfevent/perfalloc &
+
+mpirun ./parallel 50
+
+#
+echo "All Done!"
